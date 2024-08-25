@@ -1,0 +1,97 @@
+.FAQContainer{
+   
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    
+    
+}
+
+.FAQDivContainer{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    
+    
+}
+@media (max-width:1160px) {
+    .FAQDivContainer{
+        width: 100%;
+    }
+    
+}
+
+
+.FAQDivs{
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #170426;
+    background-color: inherit;
+    display: flex;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 24px;
+    color: #170426;
+    align-items: flex-start;
+    padding: 30px 56px 30px 30px;
+    margin: 10px;
+    justify-content: space-between;
+    text-align: justify;
+    
+}
+
+.toggledFAQDiv{
+   
+    border: 1px solid transparent;
+    background-color: white;
+    
+}
+
+.dropdownsymbol{
+    padding-left: 20px;
+    padding-top: 5px;
+}
+
+.FAQText{
+    max-width: 28%;
+}
+
+.FAQtitle{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 48px;
+    color: #170426;
+    text-align: justify;
+    
+}
+
+.FAQSubtitle{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    color: #4D4D4D;
+}
+
+.answer{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: #4D4D4D;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.material-symbols-outlined {
+    font-size: 24px;
+}

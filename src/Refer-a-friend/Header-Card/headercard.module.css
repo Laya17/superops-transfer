@@ -1,0 +1,295 @@
+.CardContainer{
+    padding: 4%;
+    padding-bottom: 170px;
+    border-radius: 34px;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background:linear-gradient(180deg,#ffc2c8 0,#f6f0e6 100%);
+
+}
+
+.referfriend{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    color:#FF0055;
+    text-align: center;
+    
+}
+
+.coverline{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 56px;
+    text-align: center;
+    margin: 10px;
+}
+
+.leftimg{
+    width: 250px;
+    height: 270px;
+    background-image: url("leftpic.svg");
+    position: absolute;
+    top: 335px;
+    left: 50px;
+}
+
+.rightimg{
+    width: 250px;
+    height: 270px;
+    background-image: url("rightpic.svg");
+    position: absolute;
+    top: 335px;
+    right: 50px;
+
+}
+
+.EarnCard{
+    height: 195px;
+    width: 376px;
+    background-color: #FFFFFF;
+    margin: 40px 10px;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
+}
+
+.earntext{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    text-align: center;
+    margin: 5px;
+}
+
+
+.dollar{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 34px;
+    color: #FF0055;
+}
+
+.amount{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 76px;
+    color: #FF0055;
+}
+
+.subtext{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    text-align: center;
+    color: #4D4D4D;
+}
+
+.referfriendbutton{
+    height: 54px;
+    width: 200px;
+    color: white;
+    background-color: black;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    text-align: center;
+    margin: 30px;
+    
+}
+
+.bottomText{
+    display: flex;
+    width: 30%;
+    position: relative;
+    max-width: 270px;
+    
+}
+.title{
+    color: #170426;
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    max-width: 230px;
+    margin: 0;
+}
+
+.bottomdiv{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 50px;
+   margin-top: -180px;
+   z-index: 1;
+   /* padding: 70px 70px 170px 80px; */
+   padding:4%;
+
+}
+
+
+
+.bottomimg{
+    width: 106px;
+    height: 100px;
+    background-image: url("bottompic.svg");
+    margin: 10px 20px 20px 20px;
+    position: absolute;
+    right: -12px;
+    top:60px;
+}
+
+
+
+/*bottom cards*/
+.CardCarousalElements{
+    display: flex;
+    width: 70%;
+    
+}
+
+
+.bottomCardContainer{
+    width: 30%;
+    background-color: white;
+    margin: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08)
+}
+
+.cardindex{
+
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 48px;
+    color: #170426;
+    margin: 10px 0 10px 0;
+}
+
+.cardheading{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    color: #170426;
+}
+
+.cardContent{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: #666666;
+}
+
+
+
+.buttonContainer{
+    display: none;
+}
+
+/*media queries*/
+@media (max-width:1300px) {
+    .leftimg{
+        height: 0;
+        width: 0;
+    }
+    .rightimg{
+        height: 0;
+        width: 0;
+    }
+}
+
+@media (max-width:920px) {
+    
+    .bottomdiv{
+        flex-direction: column;
+        align-items: center;
+       
+    }
+    .bottomText{
+        width: 100%;
+    }
+    .bottomimg{
+        transform: rotate(180deg);
+        z-index: 2;
+        
+    }
+
+    .bottomCardContainer{
+        width: 50%;
+        position: absolute;
+        height: 300px;
+    }
+    .CardCarousalElements{
+        width: 100%;
+        position: relative;
+        width: 36rem;
+        height: 22rem;
+    }
+
+    /*slider*/
+.prevCard{
+    left: calc(0% + 2rem);
+    opacity: 0;
+}
+
+.activeCard {
+    left: 50%;
+    transform: translateX(-50%);
+    transition:all 1s ease;
+}
+.nextCard{
+    left: 100%;
+    transform: translateX(calc(-100% - 2rem));
+    opacity: 0;
+}
+
+.buttonContainer{
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.leftBtn{
+    display: block;
+    background-color: inherit;
+    border: 0;
+    cursor: pointer;
+
+}
+.indexText{
+    font-size: 30px;
+}
+
+.rightBtn{
+    display: block;
+    background-color:inherit;
+    border: 0;
+    cursor:pointer;
+}
+
+}
